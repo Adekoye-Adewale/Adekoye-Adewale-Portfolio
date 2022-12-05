@@ -2,12 +2,31 @@
     background-color: #202020;
     padding: 0px 10px;
     color: #dddddd;
+    font-family: myParagraphFont;
+}
+
+@font-face {
+    font-family: myHeaderFont;
+    src: url(./Fonts/Courier_Prime/CourierPrime-Bold.ttf);
+}
+
+@font-face {
+    font-family: myParagraphFont;
+    src: url(./Fonts/cmu/cmunvt.ttf);
+}
+
+body {
+    width: 1400px;
+    margin: 0px auto;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
+    background-color: transparent;
+    position: relative;
 }
 
 .logo {
@@ -16,10 +35,15 @@ nav {
     transition: all 300ms ease-in-out 100ms;
 }
 
+.icons>a {
+    background-color: transparent;
+}
+
 .icons>a>img {
     width: 20px;
     transition: all 300ms ease-in-out 100ms;
     float: right;
+    background-color: transparent;
 }
 
 /* .icons>a>img:not(.l-icn) {
@@ -29,6 +53,10 @@ nav {
 .l-icn {
     margin-left: -10px;
 } */
+
+.icons {
+    background-color: transparent;
+}
 
 .icons>a>img:hover, .logo:hover {
     transform: translateY(-5px);
@@ -41,23 +69,59 @@ header {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 75px;
+    cursor: default;
+    padding: 0px;
+    font-family: myHeaderFont;
 }
 
 header>div>p {
     font-size: 20px;
     line-height: 1.6em;
+    cursor: default;
+    padding: 0px;
 }
 
-button {
+.btn {
     padding: 0px;
     border: none;
+    width: 20%;
     font-size: 20px;
-    padding-bottom: 0.2rem;
+    line-height: 1.3em;
     border-bottom: 2px solid #8d97f7;
     cursor: pointer;
+    transition: all 300ms ease-in-out 100ms;
 }
 
-header>div>img {
+.btn:hover {
     width: 100%;
+}
+
+.mine {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #8d97f7;
+}
+
+.exp {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 50px 0px;
+}
+
+h5 {
+    font-family: myHeaderFont;
+    font-size: 25px;
+    line-height: 0.2em;
+}
+
+.exp>div>p {
+    font: 20px myParagraphFont;
+    line-height: 0.2em;
 }
