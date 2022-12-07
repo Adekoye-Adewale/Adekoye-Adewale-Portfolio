@@ -95,24 +95,33 @@
         </div>
     </section>
     <footer>
-        <div>
-            <h3>Contact</h3>
-            <p>I would love to hear about your project and how i could help. 
-                Please fill in the form, and i'll get back to you as soon as possible</p>
-        </div>
-        <div>
-            <form action="">
-                <label for="text">Name</label>
-                <input type="text" placeholder="e.g (John Joe)">
+        <div class="screen-size">
+            <div class="gray">
+                <h3 class="gray">Contact</h3>
+                <p class="gray">I would love to hear about your project and how i could help. 
+                    Please fill in the form, and i'll get back to you as soon as possible</p>
+            </div>
+            <div class="gray">
+                <form name="contact" netlify-honeypot="bot-field" netlify class="gray">
 
-                <label for="email">Email</label>
-                <input type="email" placeholder="e.g (myemail@mail.com)">
+                    <p class="hidden gray">
+                        <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </p>
 
-                <label for="te">Message</label>
-                <input type="text" placeholder="I will like to...">
+                    <label for="text" class="gray">Name</label>
+                    <input type="text" placeholder="e.g (John Joe)">
 
-                <input type="button">
-            </form>
+                    <label for="email" class="gray">Email</label>
+                    <input type="email" placeholder="e.g (myemail@mail.com)">
+
+                    <label for="te" class="gray">Message</label>
+                    <input type="text" placeholder="I will like to...">
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </footer>
 </body>
