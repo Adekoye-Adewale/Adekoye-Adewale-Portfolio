@@ -1,4 +1,4 @@
-*{
+* {
     background-color: #202020;
     /* padding: 0px 10px; */
     color: #dddddd;
@@ -118,7 +118,7 @@ header>div>p {
 .exp {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 50px 0px;
 }
 
@@ -204,7 +204,14 @@ footer {
 form {
     display: block;
 }
+form>p {
+    display: block;
+}
 
 label {
-    font-size: 20px;
+    font: 20px myParagraphFont;
+}
+input {
+    border: none;
+    border-bottom: 1px;
 }
