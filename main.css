@@ -183,6 +183,10 @@ footer {
     background-color: #454545;
 }
 
+.footer-text {
+    font: 20px myParagraphFont;
+}
+
 .hidden {
     display: none;
 }
@@ -201,27 +205,56 @@ footer {
     gap: 50px;
 }
 
-input[type=text], select {
+label {
+    font: 25px myParagraphfont;
+    transition: all 300ms ease-in-out 100ms;
+}
+
+input[type=text],input[type=email], select {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    font: 16px myParagraphfont;
+    padding: 15px 20px;
+    margin: 0px 0px 10px 0px;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    border-radius: 0px;
     box-sizing: border-box;
+    box-shadow: inset 0 0 0 0 #8d97f7;
+    transition: all 300ms ease-in-out 100ms;
+}
+
+input:focus, select:focus {
+    outline: none;
+    color: #000000;
+    box-shadow: inset 1000px 0 0 0 #8d97f7;
+}
+
+#message {
+    height: 100px;
 }
   
 input[type=submit] {
-    width: 100%;
-    background-color: #202020;
+    /* width: 40%; */
+    font: 30px myParagraphfont;
+    float: right;
+    background-color: #454545;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    line-height: 1.5rem;
+    padding: 10px 15px;
+    margin: 10px 0px;
     border: none;
-    border-radius: 4px;
+    border-bottom: 2px solid #8d97f7;
+    box-shadow: inset 0 0 0 0 #8d97f7;
     cursor: pointer;
+    transition: all 300ms ease-in-out 100ms;
 }
   
 input[type=submit]:hover {
-    background-color: #8d97f7;
+    /* background-color: #8d97f7; */
+    box-shadow: inset 150px 0 0 0 #8d97f7;
+}
+
+.asterisk {
+    color: #8d97f7;
 }

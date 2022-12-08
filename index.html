@@ -98,7 +98,7 @@
         <div class="screen-size">
             <div class="gray">
                 <h3 class="gray">Contact</h3>
-                <p class="gray">I would love to hear about your project and how i could help. 
+                <p class="gray footer-text">I would love to hear about your project and how i could help. 
                     Please fill in the form, and i'll get back to you as soon as possible</p>
             </div>
             <div class="gray">
@@ -106,21 +106,18 @@
 
                     <p class="hidden gray">
                         <label>
-                        Don’t fill this out if you’re human: <input name="bot-field" />
+                            Don’t fill this out if you’re human: <input name="bot-field" />
                         </label>
                     </p>
-                    <label for="fname">Full Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="e.g (John Doe)">
+                    <label for="fname" class="gray">Full Name <span class="asterisk gray">*</span></label>
+                        <input type="text" id="fname" name="firstname" placeholder="e.g (John Doe)" required class="gray">
 
-                    <label for="lname">Email address</label>
-                        <input type="text" id="lname" name="lastname" placeholder="e.g (mail@email.com)">
+                    <label for="mail" class="gray">Email address <span class="asterisk gray">*</span></label>
+                        <input type="email" id="mail" name="email" placeholder="e.g (mail@email.com)" required class="gray">
 
-                    <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
+                        <label for="message" class="gray">Message <span class="asterisk gray">*</span></label>
+                        <input type="text" id="message" name="message" placeholder="e.g (I will like to...)" required class="gray">
+
                     <input type="submit" value="Submit">
                 </form>
             </div>
