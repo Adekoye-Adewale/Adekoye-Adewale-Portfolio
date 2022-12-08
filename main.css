@@ -1,11 +1,8 @@
 * {
     background-color: #202020;
-    /* padding: 0px 10px; */
     color: #dddddd;
     font-family: myParagraphFont;
 }
-
-
 
 @font-face {
     font-family: myHeaderFont;
@@ -17,13 +14,9 @@
     src: url(./Fonts/cmu/cmunvt.ttf);
 }
 
-/* body {
-    margin: 0px !important;
-} */
-
-body :where(header,nav,section) {
-    width: 1400px;
-    margin: 0px auto;
+header,nav,section {
+    max-width: 90vw;
+    margin: auto;
 }
 
 body :where(h1,h2,h3,h4,h5,h6) {
@@ -170,8 +163,9 @@ h3 {
 
 .pjt {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 50px;
+    grid-template-columns: 49% 49%;
+    column-gap: 30px;
+    place-content: center;
 }
 
 .pjt>div>img {
@@ -187,7 +181,9 @@ h3 {
 }
 
 footer {
+    width: 100%;
     background-color: #454545;
+    margin: 0px auto;
 }
 
 .footer-text {
@@ -203,13 +199,14 @@ footer {
 }
 
 .screen-size {
-    width: 1400px;
+    max-width: 90vw;
     background-color: #454545;
     margin: 0px auto;
     padding: 100px 0px;
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 50px;
+    grid-template-columns: 49% 49%;
+    column-gap: 30px;
+    place-content: center;
 }
 
 label {
@@ -267,7 +264,7 @@ input[type=submit]:hover {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1399px) {
 
     body :where(header,nav,section) {
         width: 100%;
@@ -280,7 +277,8 @@ input[type=submit]:hover {
     }
 
     h1 {
-        font-size: 55px;
+        font-size: 45px;
+        padding: 5px 0;
     }
 
     header>div>p {
@@ -291,7 +289,7 @@ input[type=submit]:hover {
     }
 
     .btn {
-        width: 25%;
+        width: 30%;
     }
 
     .space {
@@ -317,8 +315,8 @@ input[type=submit]:hover {
 
     .pjt {
         display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 10px;
+        grid-template-columns: 49% 49%;
+        gap: 20px;
     }
 
     .pjt>div>img {
@@ -337,4 +335,148 @@ input[type=submit]:hover {
         justify-content: space-between;
     }
 
+}
+
+@media only screen and (max-width: 1399px) {
+    header,nav,section {
+        max-width: 90vw;
+        margin: auto;
+    }
+    
+    nav {
+        display: grid;
+        place-content: center;
+    }
+    
+    .logo {
+        font-size: 25px;
+        background-color: transparent;
+    }
+    
+    .icons>a {
+        width: 20px;
+        margin: auto;
+        background-color: transparent;
+    }
+    
+    .icons>a>img {
+        margin: 10px 2px;
+    }
+    
+    .icons {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    header>div>p {
+        text-align: center;
+    }
+    
+    .btn {
+        margin: auto;
+        width: 50%;
+    }
+
+    .mine {
+        width: 100%;
+        object-fit: contain;
+        margin-top: 0px;
+    }
+    
+    .space {
+        height: 50px;
+    }
+    
+    .exp {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        padding: 50px 0px;
+    }
+    
+    h5 {
+        font-size: 20px;
+    }
+    
+    .exp>div>p {
+        font: 16px myParagraphFont;
+    }
+    
+    .projects {
+        padding: 1px 0px;
+    }
+    
+    h3 {
+        font-family: myHeaderFont;
+        font-size: 50px;
+        line-height: 1.5em;
+    }
+
+    .pjts {
+        display: block;
+    }
+
+    .pjts>div>h3 {
+        margin: 0px;
+    }
+
+    .pjt {
+        display: block;
+    }
+
+    .pjt>div {
+        margin: 4em 0px;
+    }
+    
+    .pjt>div>img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .pjt>div>h5 {
+        line-height: 0em;
+    }
+
+    .footer-text {
+        font: 18px myParagraphFont;
+        margin-bottom: 50px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .gray {
+        background-color: #454545;
+    }
+    
+    .screen-size {
+        padding: 50px 0px;
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 30px;
+        place-content: center;
+    }
+
+    .screen-size>div>h3 {
+        margin: 0px;
+    }
+
+    label {
+        font: 20px myParagraphfont;
+    }
+
+    input[type=submit] {
+        font: 20px myParagraphfont;
+    }
+    
 }
