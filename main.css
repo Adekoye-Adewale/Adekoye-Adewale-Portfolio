@@ -17,6 +17,10 @@
     src: url(./Fonts/cmu/cmunvt.ttf);
 }
 
+/* body {
+    margin: 0px !important;
+} */
+
 body :where(header,nav,section) {
     width: 1400px;
     margin: 0px auto;
@@ -262,3 +266,75 @@ input[type=submit]:hover {
     color: #8d97f7;
 }
 
+
+@media only screen and (max-width: 1200px) {
+
+    body :where(header,nav,section) {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 10px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    header>div>p {
+        font-size: 20px;
+        line-height: 1.6em;
+        cursor: default;
+        padding: 0px;
+    }
+
+    .btn {
+        width: 25%;
+    }
+
+    .space {
+        width: 100%;
+        height: 50px;
+    }
+
+    .exp {
+        padding: 50px 10px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    .projects {
+        padding: 50px 10px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .pjt {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    .pjt>div>img {
+        width: 100%;
+        height: 250px;
+        cursor: pointer;
+        object-fit: cover;
+        transition: all 300ms ease-in-out 100ms;
+    }
+
+    .screen-size {
+        width: 100%;
+        padding: 50px 10px;
+        display: grid;
+        grid-template-columns: 45% 50%;
+        justify-content: space-between;
+    }
+
+}
