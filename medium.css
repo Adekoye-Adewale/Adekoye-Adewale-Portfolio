@@ -1,24 +1,5 @@
-* {
-    background-color: #202020;
-    /* padding: 0px 10px; */
-    color: #dddddd;
-    font-family: myParagraphFont;
-}
-
-
-
-@font-face {
-    font-family: myHeaderFont;
-    src: url(./Fonts/Courier_Prime/CourierPrime-Bold.ttf);
-}
-
-@font-face {
-    font-family: myParagraphFont;
-    src: url(./Fonts/cmu/cmunvt.ttf);
-}
-
 body :where(header,nav,section) {
-    width: 1400px;
+    width: 100vw;
     margin: 0px auto;
 }
 
