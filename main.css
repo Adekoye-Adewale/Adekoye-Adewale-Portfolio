@@ -4,6 +4,10 @@
     font-family: myParagraphFont;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 @font-face {
     font-family: myHeaderFont;
     src: url(./Fonts/Courier_Prime/CourierPrime-Bold.ttf);
@@ -21,6 +25,10 @@ header,nav,section {
 
 body :where(h1,h2,h3,h4,h5,h6) {
     cursor: default;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav {
@@ -149,7 +157,7 @@ h3 {
     line-height: 0.5em;
 }
 
-.pjts>div>p {
+.pjts>div>a>p {
     border-bottom: 2px solid #8d97f7;
     font-size: 20px;
     box-shadow: inset 0 0 0 0 #8d97f7;
@@ -157,7 +165,7 @@ h3 {
     transition: all 300ms ease-in-out 100ms;
 }
 
-.pjts>div>p:hover {
+.pjts>div>a>p:hover {
     box-shadow: inset 150px 0 0 0 #8d97f7;
 }
 
@@ -290,6 +298,7 @@ input[type=submit]:hover {
 
     .btn {
         width: 30%;
+        text-align: center;
     }
 
     .space {
@@ -382,6 +391,7 @@ input[type=submit]:hover {
     }
     
     .btn {
+        text-align: center;
         margin: auto;
         width: 50%;
     }
