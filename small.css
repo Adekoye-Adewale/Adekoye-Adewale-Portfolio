@@ -1,4 +1,0 @@
-body :where(header,nav,section) {
-    width: 100vw;
-    margin: 0px auto;
-}
